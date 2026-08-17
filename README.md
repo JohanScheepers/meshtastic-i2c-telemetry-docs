@@ -112,6 +112,7 @@ Meshtastic features an automatic hardware detection mechanism on boot. When sens
 | **RadSens** | I2C | `0x66` | Radiation Dosimeter / Geiger-Müller Counter | 0.01 to 1000 µSv/h \| 0 to 65,535 CPM |
 
 [↑ Back to Top](#table-of-contents)
+
 ---
 
 ### 5. Distance, Weight & Weather Instrumentation
