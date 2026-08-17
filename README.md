@@ -4,6 +4,47 @@ A comprehensive technical reference of all supported sensors in the Meshtastic f
 
 ---
 
+## Table of Contents
+
+* [Overview](#overview)
+  * [1. Temperature, Humidity & Atmospheric Pressure](#1-temperature-humidity--atmospheric-pressure)
+  * [2. Air Quality & Particulate Matter](#2-air-quality--particulate-matter)
+  * [3. Power, Voltage & Battery Monitoring](#3-power-voltage--battery-monitoring)
+  * [4. Optical, Light & Radiation](#4-optical-light--radiation)
+  * [5. Distance, Weight & Weather Instrumentation](#5-distance-weight--weather-instrumentation)
+  * [6. Health & Non-Contact Infrared Temperature](#6-health--non-contact-infrared-temperature)
+* [Meshtastic I2C Multi-Device Bus Guide](#meshtastic-i2c-multi-device-bus-guide)
+  * [How It Works](#how-it-works)
+  * [Connecting Two Identical Sensors](#connecting-two-identical-sensors)
+  * [Telemetry Prioritization](#telemetry-prioritization)
+* [Meshtastic Sensor JSON Telemetry Payloads](#meshtastic-sensor-json-telemetry-payloads)
+  * [Standard Telemetry JSON Envelope](#standard-telemetry-json-envelope)
+  * [1. Environmental Telemetry (`environmentMetrics`)](#1-environmental-telemetry-environmentmetrics)
+    * [BME280](#bme280)
+    * [BME680 / BME688](#bme680--bme688)
+    * [BMP280 / BMP085 / BMP180 / BMP388 / DPS310 / LPS22](#bmp280--bmp085--bmp180--bmp388--dps310--lps22)
+    * [SHT30 / SHT31 / SHT40 / SHTC3 / AHT10 / AHT20 / DHT11 / DHT22](#sht30--sht31--sht40--shtc3--aht10--aht20--dht11--dht22)
+    * [MCP9808 / DS18B20](#mcp9808--ds18b20)
+    * [LTR390UV](#ltr390uv)
+    * [RCWL9620 (Ultrasonic Distance)](#rcwl9620-ultrasonic-distance)
+    * [NAU7802 (Weight / Load Cell)](#nau7802-weight--load-cell)
+    * [RadSens (Geiger Counter)](#radsens-geiger-counter)
+    * [DFRobot Lark Weather Station](#dfrobot-lark-weather-station)
+    * [DFRobot Rain Gauge](#dfrobot-rain-gauge)
+  * [2. Air Quality Telemetry (`airQualityMetrics`)](#2-air-quality-telemetry-airqualitymetrics)
+    * [SCD30 / SCD40 / SCD41](#scd30--scd40--scd41)
+    * [PMSA003I / SPS30](#pmsa003i--sps30)
+  * [3. Power Telemetry (`powerMetrics`)](#3-power-telemetry-powermetrics)
+    * [INA219 / INA226 / INA260](#ina219--ina226--ina260)
+    * [INA3221 (3-Channel Monitor)](#ina3221-3-channel-monitor)
+    * [MAX17048 (Fuel Gauge)](#max17048-fuel-gauge)
+  * [4. Ambient Lighting Telemetry (`ambientLightingMetrics`)](#4-ambient-lighting-telemetry-ambientlightingmetrics)
+    * [OPT3001 / VEML7700 / TSL2591](#opt3001--veml7700--tsl2591)
+  * [5. Health Telemetry (`healthMetrics`)](#5-health-telemetry-healthmetrics)
+    * [MAX30102](#max30102)
+
+---
+
 ## Overview
 
 Meshtastic features an automatic hardware detection mechanism on boot. When sensors are attached to the default I2C bus pins (`SDA` / `SCL`) or configured GPIO pins, the firmware scans for known I2C bus addresses and initializes corresponding telemetry drivers dynamically once enabled in device configuration.
