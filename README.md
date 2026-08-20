@@ -187,21 +187,22 @@ Every sensor packet sent over MQTT or the API is wrapped in a top-level JSON env
 
 ```json
 {
-  "channel": 0,
-  "from": 305419896,
-  "to": 4294967295,
-  "id": 184920482,
-  "sender": "!12345678",
-  "type": "telemetry",
-  "timestamp": 1718000000,
-  "payload": {
-    "time": 1718000000,
-    "environmentMetrics": {
-      "temperature": 23.45,
-      "relativeHumidity": 55.20,
-      "barometricPressure": 1013.25
-    }
-  }
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "barometric_pressure": 952.900573730469,
+        "relative_humidity": 84.7275390625,
+        "temperature": 17.7600002288818
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
 }
 ```
 
