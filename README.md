@@ -424,6 +424,22 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
 * **Metrics:** Radiation Level (µSv/h)
 ```json
 {
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "radiationLevel": 0.14
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
+}
+{
   "time": 1718000000,
   "environmentMetrics": {
     "radiationLevel": 0.14
