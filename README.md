@@ -85,6 +85,7 @@ Meshtastic features an automatic hardware detection mechanism on boot. When sens
 | **SPS30** | I2C | `0x69` | Particulate Matter (PM1.0, PM2.5, PM4.0, PM10) | 0 to 1,000 µg/m³ |
 
 [↑ Back to Top](#table-of-contents)
+
 ---
 
 ### 3. Power, Voltage & Battery Monitoring
