@@ -255,9 +255,9 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
     "id": 2895454263,
     "payload": {
         "temperature": 24.10,
-        "relativeHumidity": 52.40,
-        "barometricPressure": 1012.80,
-        "gasResistance": 12500.0,
+        "relative_humidity": 52.40,
+        "barometric_pressure": 1012.80,
+        "gas_resistance": 12500.0,
         "iaq": 45
     },
     "rssi": -67,
