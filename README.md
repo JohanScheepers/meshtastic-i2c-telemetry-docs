@@ -391,12 +391,6 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
     "to": 4294967295,
     "type": "telemetry"
 }
-{
-  "time": 1718000000,
-  "environmentMetrics": {
-    "distance": 1450.0
-  }
-}
 ```
 
 [↑ Back to Top](#table-of-contents)
