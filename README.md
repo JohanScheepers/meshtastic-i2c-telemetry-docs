@@ -222,12 +222,22 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
 * **Metrics:** Temperature (°C), Relative Humidity (%), Barometric Pressure (hPa)
 ```json
 {
-  "time": 1718000000,
-  "environmentMetrics": {
-    "temperature": 23.45,
-    "relativeHumidity": 55.20,
-    "barometricPressure": 1013.25
-  }
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "barometric_pressure": 952.900573730469,
+        "relative_humidity": 84.7275390625,
+        "temperature": 17.7600002288818
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
 }
 ```
 
@@ -238,14 +248,24 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
 * **Metrics:** Temperature (°C), Relative Humidity (%), Barometric Pressure (hPa), Gas Resistance (Ω), Indoor Air Quality (IAQ)
 ```json
 {
-  "time": 1718000000,
-  "environmentMetrics": {
-    "temperature": 24.10,
-    "relativeHumidity": 52.40,
-    "barometricPressure": 1012.80,
-    "gasResistance": 12500.0,
-    "iaq": 45
-  }
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "temperature": 24.10,
+        "relativeHumidity": 52.40,
+        "barometricPressure": 1012.80,
+        "gasResistance": 12500.0,
+        "iaq": 45
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
 }
 ```
 
@@ -256,11 +276,21 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
 * **Metrics:** Temperature (°C), Barometric Pressure (hPa)
 ```json
 {
-  "time": 1718000000,
-  "environmentMetrics": {
-    "temperature": 21.80,
-    "barometricPressure": 1014.10
-  }
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "temperature": 21.80,
+        "barometricPressure": 1014.10
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
 }
 ```
 
