@@ -351,11 +351,21 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
 * **Metrics:** Illuminance (Lux), UV Index
 ```json
 {
-  "time": 1718000000,
-  "environmentMetrics": {
-    "lux": 1250.0,
-    "uvIndex": 3.4
-  }
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "lux": 1250.0,
+        "uvIndex": 3.4
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
 }
 ```
 
