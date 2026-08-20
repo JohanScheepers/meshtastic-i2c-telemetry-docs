@@ -301,11 +301,22 @@ Sensors measuring climate, pressure, temperature, humidity, gas, distance, weigh
 * **Metrics:** Temperature (°C), Relative Humidity (%)
 ```json
 {
-  "time": 1718000000,
-  "environmentMetrics": {
-    "temperature": 22.50,
-    "relativeHumidity": 48.30
-  }
+    "channel": 0,
+    "from": 3769067321,
+    "hop_start": 7,
+    "hops_away": 0,
+    "id": 2895454263,
+    "payload": {
+        "barometric_pressure": 952.900573730469,
+        "relativeHumidity": 84.7275390625,
+        "temperature": 17.7600002288818
+    },
+    "rssi": -67,
+    "sender": "!938c04bc",
+    "snr": 10.5,
+    "timestamp": 1787030258,
+    "to": 4294967295,
+    "type": "telemetry"
 }
 ```
 
